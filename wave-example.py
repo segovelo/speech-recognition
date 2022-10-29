@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import wave
 
 # Explain
@@ -9,7 +10,7 @@ import wave
 # - values of a frame
 
 # open wave file
-obj = wave.open("output.wav",'rb')
+obj = wave.open("output.wav", 'rb')
 
 print("Number of channels", obj.getnchannels())
 print("Sample width", obj.getsampwidth())
@@ -22,9 +23,9 @@ print(len(frames) / obj.getsampwidth(), frames[0], type(frames[0]))
 obj.close()
 
 # write wave file
-sample_rate = 16000.0 # hertz
-obj = wave.open("new_file.wav",'wb')
-obj.setnchannels(1) # mono
+sample_rate = 16000.0  # hertz
+obj = wave.open("new_file.wav", 'wb')
+obj.setnchannels(1)  # mono
 obj.setsampwidth(2)
 obj.setframerate(sample_rate)
 obj.writeframes(frames)
