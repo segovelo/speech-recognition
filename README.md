@@ -27,7 +27,6 @@ pip3 install pydub
 pip3 install requests
 pip3 install requests-oauthlib
 pip3 install youtube-dl
-pip3 install
-pip3 install
-pip3 install
+pip3 install websockets
+pip3 install openai
 ```
