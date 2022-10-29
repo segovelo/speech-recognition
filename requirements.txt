@@ -6,3 +6,4 @@ matplotlib==3.6.1
 numpy==1.23.4
 pydub==0.25.1
 pyAudio==0.2.12
+youtube-dl==2021.12.17
