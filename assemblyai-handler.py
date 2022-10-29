@@ -9,7 +9,6 @@ load_dotenv()
 
 api_key = os.getenv('ASSEMBLYAI_API_KEY')
 filename = sys.argv[1]
-
 upload_endpoint = 'https://api.assemblyai.com/v2/upload'
 transcript_endpoint = 'https://api.assemblyai.com/v2/transcript'
 

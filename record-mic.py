@@ -1,5 +1,9 @@
 import pyaudio
 import wave
+from datetime import datetime
+
+now = datetime.now()
+date_time = now.strftime("%Y-%m-%dT%H-%M-%S")
 
 FRAMES_PER_BUFFER = 3200
 FORMAT = pyaudio.paInt16
@@ -30,8 +34,8 @@ stream.stop_stream()
 stream.close()
 p.terminate()
 
-
-wf = wave.open("output.wav", 'wb')
+file_name = f"output-{date_time}.wav"
+wf = wave.open(file_name, 'wb')
 wf.setnchannels(CHANNELS)
 wf.setsampwidth(p.get_sample_size(FORMAT))
 wf.setframerate(RATE)

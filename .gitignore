@@ -156,3 +156,6 @@ tmp
 # Audio files
 *.wav
 *.mp3
+
+# Text files
+output*.txt
